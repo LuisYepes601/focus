@@ -85,7 +85,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    
+
 
 
 
@@ -213,10 +213,13 @@ input:checked+.slider:before {
     display: flex;
     gap: .5rem;
     align-items: center;
-
+    transition: background .5s,color .5s;
 }
 
-.start-btn:hover {}
+.start-btn:hover {
+    background: linear-gradient(180deg, #563d6e 0%, #6b91be 100%);
+   
+}
 
 
 footer {
@@ -256,7 +259,9 @@ footer {
     .contenido__main p {
         width: 70vw;
         max-width: 100%;
-    }.botones button{
+    }
+
+    .botones button {
         padding: .5rem .5rem;
     }
 }
