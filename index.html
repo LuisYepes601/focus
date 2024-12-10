@@ -11,6 +11,8 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/dhyana" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dark_mode" />
 
     <title>Enfocate</title>
 
@@ -21,12 +23,24 @@
 
         <header class="header">
             <img src="img/Fokus -  logo-02 1.png" alt="">
+            <div class="toggle-container">
+                <label class="switch-modo">
+                    <input type="checkbox" class="switch-modo__btn">
+                    <span class="slider">
+                        <span class="material-symbols-outlined">
+                            dark_mode
+                        </span>
+                    </span>
+
+                </label>
+
+
         </header>
 
         <main class="main">
             <section class="contenido__main">
 
-                <p>Optimiza tu productividad,
+                <p class="title">Optimiza tu productividad,
                     <span>sumérgete en lo que importa.</span>
                 <p>
 
@@ -51,9 +65,11 @@
 
                         <div class="toggle-container">
                             <label class="switch">
-                                <input type="checkbox">
+                                <input type="checkbox" class="switch__audio">
                                 <span class="slider"></span>
                             </label>
+                            <audio class="audio"
+                                src="audio/Interstellar_Main_Theme_-_Extra_Extended_-_Soundtrack_by_Hans_Zimmer_[_YouConvert.net_].mp3"></audio>
                             <span class="label-text">Música</span>
 
 

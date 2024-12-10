@@ -35,8 +35,10 @@ body {
 .header {
     grid-area: header;
     display: flex;
-    justify-content: center;
-    padding: 2rem 0 4rem 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem 4rem 2rem;
+
 }
 
 .header img {
@@ -151,19 +153,22 @@ body {
 
 }
 
-.switch {
+.switch,
+.switch-modo {
     position: relative;
     display: inline-block;
     width: 50px;
     height: 25px;
 }
 
+
 .label-text {
     color: var(--color-titulo);
 
 }
 
-.switch input {
+.switch input,
+.switch-modo__btn {
     opacity: 0;
     width: 0;
     height: 0;
@@ -179,6 +184,8 @@ body {
     border-radius: 25px;
     cursor: pointer;
     transition: 0.4s;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .slider:before {
@@ -193,13 +200,20 @@ body {
     transition: 0.4s;
 }
 
-input:checked+.slider {
+input:checked+.slider  {
     background-color: #a855f7;
+   
 }
 
-input:checked+.slider:before {
+input:checked+.slider:before{
     transform: translateX(25px);
+    
 }
+
+.material-symbols-outlined {
+    opacity: 1;
+}
+
 
 .start-btn {
     background: linear-gradient(180deg, #B872FF 0%, #144480 100%);
@@ -213,12 +227,16 @@ input:checked+.slider:before {
     display: flex;
     gap: .5rem;
     align-items: center;
-    transition: background .5s,color .5s;
+    transition: background 1s, color .5s;
+}
+
+.start-btn:active {
+    color: #6b91be;
 }
 
 .start-btn:hover {
     background: linear-gradient(180deg, #563d6e 0%, #6b91be 100%);
-   
+
 }
 
 
